@@ -18,7 +18,7 @@ export default {
       <div class="row h-100">
         
         <div class="col-md-9">
-          <router-view />         
+          <router-view :key="$route.fullPath"/>         
         </div>
 
         <div class="col-md-3">

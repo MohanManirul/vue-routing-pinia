@@ -4,6 +4,7 @@ import Home from '../views/Home.vue';
 import About from '../views/About.vue';
 import Contact from '../views/Contact.vue';
 import Blog from '../views/Blog.vue';
+import Pinia from '../views/Pinia.vue';
 import RightSidebar from '../components/RightSidebar.vue';
 import BlogRightSidebar from '../components/BlogRightSidebar.vue';
 
@@ -58,6 +59,13 @@ const routes = [
         path:"/contact-us" , 
         component: Contact ,
         name:'contact'
+       
+    },
+
+    {
+        path:"/pinia" , 
+        component: Pinia ,
+        name:'pinia'
        
     },
 
