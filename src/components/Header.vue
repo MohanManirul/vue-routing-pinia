@@ -19,9 +19,7 @@
           <router-link  class="nav-link d-inline text-white  me-3" :to="{name:'contact'}"
             >Contact Us</router-link
           >
-          <router-link  class="nav-link d-inline text-white" :to="{name:'pinia'}"
-            >Pinia</router-link
-          >
+        
         </div>
       </div>
     </nav>
