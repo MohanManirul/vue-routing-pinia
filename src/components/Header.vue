@@ -4,21 +4,6 @@ import {useAuthStore} from "../stores/auth" ;
 
 const authStore = useAuthStore();
 
-function Logout(){
-  authStore.$patch((state)=>{
-    state.isAuthenticated = false,
-    state.user = {}
-  })
-  
-}
-
-function Login(){
-   authStore.$patch((state)=>{
-    state.isAuthenticated = true,
-    state.user = {name:"Saiful", email:"saiful@gmail.com"}
-  })
-  
-}
 
 
 </script>
@@ -42,10 +27,10 @@ function Login(){
             >Contact Us</router-link
           >
           <li v-if="authStore.isAuthenticated" class="btn btn-danger nav-link d-inline text-white  me-3" 
-            > <button @click="Logout" class="btn btn-danger">Logout</button> </li
+            > <button @click="authStore.Logout" class="btn btn-danger">Logout</button> </li
           >
           <li v-else class="btn btn-success nav-link d-inline text-white  me-3"
-            > <button  @click="Login" class="btn btn-success">Login</button></li
+            > <button  @click="authStore.Login" class="btn btn-success">Login</button></li
           >
 
         </div>
