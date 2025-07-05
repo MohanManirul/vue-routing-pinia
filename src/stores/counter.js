@@ -5,10 +5,17 @@ export const useCounterStore = defineStore("counter",{
         count : 10
     }),
     
-    getters:{
-        
+    getters:{        
         countDigitLength : (state)=> state.count.toString().length
+    },
+    actions:{
+        increment(){
+            this.count++;
+        },
+        deccrement(){
+            this.count--;
+        }
 
-    }
+    },
 });
 
